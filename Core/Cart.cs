@@ -13,7 +13,7 @@ namespace Core
             get
             {
                 decimal subTotal = 0;
-                //TODO: Refactor this. Use LINQ with aggregation to get SUM.
+                //TODO: Refactor this. Use LINQ with aggregation to get SUMMMM.
                 OrderDetails.ForEach(od => subTotal += od.ExtendedPrice);
                 return subTotal;
             }
