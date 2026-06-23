@@ -1,0 +1,79 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Clickjacking.html" />
+    <None Remove="CSRF.html" />
+    <None Remove="images\LolCatz\1.jpg" />
+    <None Remove="images\LolCatz\10.jpg" />
+    <None Remove="images\LolCatz\11.jpg" />
+    <None Remove="images\LolCatz\12.jpg" />
+    <None Remove="images\LolCatz\13.jpg" />
+    <None Remove="images\LolCatz\14.jpg" />
+    <None Remove="images\LolCatz\15.jpg" />
+    <None Remove="images\LolCatz\16.jpg" />
+    <None Remove="images\LolCatz\17.jpg" />
+    <None Remove="images\LolCatz\18.jpg" />
+    <None Remove="images\LolCatz\19.jpg" />
+    <None Remove="images\LolCatz\2.jpg" />
+    <None Remove="images\LolCatz\20.jpg" />
+    <None Remove="images\LolCatz\21.jpg" />
+    <None Remove="images\LolCatz\22.jpg" />
+    <None Remove="images\LolCatz\23.jpg" />
+    <None Remove="images\LolCatz\3.jpg" />
+    <None Remove="images\LolCatz\4.jpg" />
+    <None Remove="images\LolCatz\5.jpg" />
+    <None Remove="images\LolCatz\6.jpg" />
+    <None Remove="images\LolCatz\7.jpg" />
+    <None Remove="images\LolCatz\8.jpg" />
+    <None Remove="images\LolCatz\9.jpg" />
+    <None Remove="images\rickroll.jpg" />
+    <None Remove="Scripts\Clickjacking.js" />
+    <None Remove="Scripts\CSRF.js" />
+    <None Remove="Scripts\jquery-1.4.1-vsdoc.js" />
+    <None Remove="Scripts\jquery-1.4.1.js" />
+    <None Remove="Scripts\jquery-1.4.1.min.js" />
+    <None Remove="Styles\site.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Clickjacking.html" />
+    <Content Include="CSRF.html" />
+    <Content Include="images\LolCatz\1.jpg" />
+    <Content Include="images\LolCatz\10.jpg" />
+    <Content Include="images\LolCatz\11.jpg" />
+    <Content Include="images\LolCatz\12.jpg" />
+    <Content Include="images\LolCatz\13.jpg" />
+    <Content Include="images\LolCatz\14.jpg" />
+    <Content Include="images\LolCatz\15.jpg" />
+    <Content Include="images\LolCatz\16.jpg" />
+    <Content Include="images\LolCatz\17.jpg" />
+    <Content Include="images\LolCatz\18.jpg" />
+    <Content Include="images\LolCatz\19.jpg" />
+    <Content Include="images\LolCatz\2.jpg" />
+    <Content Include="images\LolCatz\20.jpg" />
+    <Content Include="images\LolCatz\21.jpg" />
+    <Content Include="images\LolCatz\22.jpg" />
+    <Content Include="images\LolCatz\23.jpg" />
+    <Content Include="images\LolCatz\3.jpg" />
+    <Content Include="images\LolCatz\4.jpg" />
+    <Content Include="images\LolCatz\5.jpg" />
+    <Content Include="images\LolCatz\6.jpg" />
+    <Content Include="images\LolCatz\7.jpg" />
+    <Content Include="images\LolCatz\8.jpg" />
+    <Content Include="images\LolCatz\9.jpg" />
+    <Content Include="images\rickroll.jpg" />
+    <Content Include="Scripts\Clickjacking.js" />
+    <Content Include="Scripts\CSRF.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\site.css" />
+  </ItemGroup>
+
+</Project>
