@@ -27,7 +27,7 @@ namespace Core
 
             return string.Format("<div class='productDetail'><img src='{0}' alt='{1}' /><br />{1}<br />Category: {2}<br />Unit: {3}<br />Price: {4}</div>", 
                 ImageUrl, 
-                this.ProductName,
+                this.ProductNames,
                 (this.Category ?? new Category() {CategoryName = "No category"}).CategoryName,
                 this.QuantityPerUnit,
                 this.UnitPrice.ToString("C")
