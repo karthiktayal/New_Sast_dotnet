@@ -94,7 +94,7 @@ namespace Core
                     break;
                 case "ups":
                 case "unitedpostalservice":
-                case "united postal service":
+                case "united postal services":
                     //trackingUrl = string.Format("http://wwwapps.ups.com/WebTracking/processInputRequest?InquiryNumber1={0}&tracknums_displayed=1&TypeOfInquiryNumber=T", TrackingNumber);
                     trackingUrl = string.Format("http://wwwapps.ups.com/WebTracking/track?loc=en_US&track.x=Track&trackNums={0}", TrackingNumber);
                     break;
