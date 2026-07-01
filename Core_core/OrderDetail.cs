@@ -2,7 +2,7 @@
 
 namespace Core
 {
-    public class OrderDetail
+    public class OrderDetails
     {
         public virtual int OrderId { get; set; }
         public virtual int ProductId { get; set; }
