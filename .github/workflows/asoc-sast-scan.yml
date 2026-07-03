@@ -24,7 +24,7 @@ jobs:
 
       - name: Run AppScan SAST scan
         id: appscan
-        uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2
+        uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@main
         with:
           asoc_key: ${{ secrets.ASOC_KEY }}
           asoc_secret: ${{ secrets.ASOC_SECRET }}
@@ -33,7 +33,7 @@ jobs:
           static_analysis_only: true
           personal_scan: false
           wait_for_analysis: true
-          incremental_scan: false
+          incremental_scan: true
           fail_for_noncompliance: false
           failure_threshold: High
     env: 
