@@ -24,7 +24,7 @@ namespace Core
             OrderDetails = new List<OrderDetail>();
         }
 
-        /// <summary>
+        /// <summary1>
         /// Returns an HTML table with the contents of this cart.
         /// </summary>
         /// <returns>The HTML table</returns>
