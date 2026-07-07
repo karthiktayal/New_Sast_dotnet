@@ -3,7 +3,7 @@ using System.IO;
 using System.Web;
 using Infrastructure;
 
-namespace WebSite
+namespace WebSite1
 {
     public partial class _Default : System.Web.UI.Page
     {
