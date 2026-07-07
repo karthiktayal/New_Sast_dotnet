@@ -31,7 +31,6 @@ jobs:
           application_id: ${{ secrets.ASOC_APP_ID }}
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
           static_analysis_only: true
-          sast_scan_id: fa818546-4cee-46af-bf64-f2aad9c2a4ca
           personal_scan: false
           wait_for_analysis: true
           incremental_scan: true
