@@ -8,7 +8,7 @@ namespace Core
     {
         public List<OrderDetail> OrderDetails { get; set; }
 
-        public decimal SubTotal
+        public decimal SubTotals
         {
             get
             {
