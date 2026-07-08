@@ -3,7 +3,7 @@ using System.Net.Mail;
 
 namespace Infrastructure
 {
-    public class EmailSender
+    public class EmailSenders
     {
         public static void Send(string To, string Subject, string MessageBody)
         {
