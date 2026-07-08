@@ -29,10 +29,12 @@ jobs:
           asoc_secret: ${{ secrets.ASOC_SECRET }}
           application_id: ${{ secrets.ASOC_APP_ID }}
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
+          service_url: https://cloud.appscan.com
           static_analysis_only: true
           personal_scan: false
           wait_for_analysis: true
           incremental_scan: true
+          sast_scan_id: 2f9a14d3-398a-494c-a3f6-43abb3891eeb
           fail_for_noncompliance: false
           failure_threshold: High
     env: 
