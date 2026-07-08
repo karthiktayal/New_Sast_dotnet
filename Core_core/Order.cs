@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core
 {
-    public class Order A360_ASoC_reASoC_rescan_SHinc_SHrescan1_main123456
+    public class Order A360_ASoC_reASoC_rescan_SHinc_SHrescan1_main1234567
     {
         public virtual int OrderId { get; set; }
         public virtual string CustomerId { get; set; }
