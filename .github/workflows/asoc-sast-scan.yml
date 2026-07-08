@@ -32,7 +32,7 @@ jobs:
           service_url: https://cloud.appscan.com
           static_analysis_only: true
           personal_scan: false
-          wait_for_analysis: true
+          wait_for_analysis: false
           incremental_scan: true
           sast_scan_id: 2f9a14d3-398a-494c-a3f6-43abb3891eeb
           fail_for_noncompliance: false
