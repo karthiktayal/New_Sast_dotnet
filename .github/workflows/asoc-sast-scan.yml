@@ -5,7 +5,9 @@ permissions:
   contents: read
 
 on:
-  workflow_dispatch:
+    pull_request:
+      branches: [main]
+      types: [opened, synchronize]
 jobs:
   scan:
     runs-on: self-hosted
@@ -28,6 +30,8 @@ jobs:
           application_id: ${{ secrets.ASOC_APP_ID }}
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
           static_analysis_only: true
+          service_url:  https://blmycldtl446131.nonprod.hclpnp.com
+          acceptssl: true
           personal_scan: false
           wait_for_analysis: false
           incremental_scan: false
