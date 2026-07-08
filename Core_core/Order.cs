@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core
 {
-    public class Orderssse12345678reA360
+    public class Orderssse12345678reA360ASoC
     {
         public virtual int OrderId { get; set; }
         public virtual string CustomerId { get; set; }
