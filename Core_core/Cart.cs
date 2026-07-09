@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Core normal scan
+namespace Core normal scan 1
 {
     public class Cart
     {
