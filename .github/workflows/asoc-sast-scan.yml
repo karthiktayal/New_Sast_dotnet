@@ -36,6 +36,7 @@ jobs:
           wait_for_analysis: false
           incremental_scan: true
           fail_for_noncompliance: false
+          sast_scan_id:  c3c9f48e-7691-429b-bb13-eb188a25a158
           failure_threshold: High
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
