@@ -1,2 +1,2 @@
 const single = 'Hello, World!';
-const double = "Hello, World!";
+const single = 'Hello, World!';
