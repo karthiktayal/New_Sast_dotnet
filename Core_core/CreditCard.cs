@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Core
+namespace Core 1.1.0 test
 {
     public class CreditCard incremental scan core_core
     {
