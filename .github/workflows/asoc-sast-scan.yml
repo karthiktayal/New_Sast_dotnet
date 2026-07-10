@@ -35,7 +35,8 @@ jobs:
           acceptssl: true
           personal_scan: false
           wait_for_analysis: true
-          incremental_scan: true
+          incremental_scan: false
+          sca_scan_id:  7127cf29-0768-4d40-b6e3-77e3b8920095 
           fail_for_noncompliance: false
           failure_threshold: High
     env: 
