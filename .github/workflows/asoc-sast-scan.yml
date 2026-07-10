@@ -36,7 +36,6 @@ jobs:
           personal_scan: false
           wait_for_analysis: true
           incremental_scan: true
-          sast_scan_id: 0e9cbe33-df65-48bc-b2ce-f34e8101d990
           fail_for_noncompliance: false
           failure_threshold: High
     env: 
