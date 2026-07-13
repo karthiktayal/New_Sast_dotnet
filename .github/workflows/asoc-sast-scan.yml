@@ -21,6 +21,18 @@ jobs:
         id: date
         run: echo "date=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_OUTPUT
         
+      - name: Clean AppScan Client Utility Cache
+        run: |
+          APPSCAN_DIR="$HOME/.appscan"
+          if [ -d "$APPSCAN_DIR" ]; then
+            echo "Fixing permissions on existing AppScan directory..."
+            # Adjust ownership to the current runner user just in case
+            sudo chown -R $(whoami):$(id -ng) "$APPSCAN_DIR" || true
+            
+            echo "Clearing out corrupted installation to force fresh extraction..."
+            rm -rf "$APPSCAN_DIR/SAClientUtil.8.0.1731"
+          fi
+        
       - name: Run AppScan SAST scan
         id: appscan
         uses: HCL-TECH-SOFTWARE/appscan-sast-action@configTest
