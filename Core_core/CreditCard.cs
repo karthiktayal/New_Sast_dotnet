@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Core 1.1.0 test config123
+namespace Core 1.1.0 test config123 linux runner
 {
     public class CreditCard incremental scan core_core config12
     {
