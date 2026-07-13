@@ -6,6 +6,7 @@ using System.Xml;
 using System.Xml.Linq;
 
 namespace Core 1.1.0 test config123 linux runner12
+namespace Core 1.1.0 test config123 linux runner1
 {
     public class CreditCard incremental scan core_core config12
     {
