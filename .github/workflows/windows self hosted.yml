@@ -10,7 +10,7 @@ on:
       types: [opened, synchronize]
 jobs:
   scan:
-    runs-on: [self-hosted, linux]
+    runs-on: [self-hosted, windows]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -19,19 +19,7 @@ jobs:
           
       - name: Get current date
         id: date
-        run: echo "date=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_OUTPUT
-        
-      - name: Clean AppScan Client Utility Cache
-        run: |
-          APPSCAN_DIR="$HOME/.appscan"
-          if [ -d "$APPSCAN_DIR" ]; then
-            echo "Fixing permissions on existing AppScan directory..."
-            # Adjust ownership to the current runner user just in case
-            sudo chown -R $(whoami):$(id -ng) "$APPSCAN_DIR" || true
-            
-            echo "Clearing out corrupted installation to force fresh extraction..."
-            rm -rf "$APPSCAN_DIR/SAClientUtil.8.0.1731"
-          fi
+        run: echo "date=$(Get-Date -Format 'yyyy-MM-dd HH:mm')" >> $env:GITHUB_OUTPUT
         
       - name: Run AppScan SAST scan
         id: appscan
@@ -52,4 +40,3 @@ jobs:
           failure_threshold: High
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      HOME: ${{ github.workspace }}
