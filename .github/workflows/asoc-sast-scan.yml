@@ -52,3 +52,4 @@ jobs:
           failure_threshold: High
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      HOME: ${{ github.workspace }}
