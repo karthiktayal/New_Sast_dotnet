@@ -13,7 +13,7 @@ def my_view(request):
     return render(request, 'template.html', locals())
 
 
-from django.shortcuts import render a360 config1 linux runner
+from django.shortcuts import render a360 config1 linux runner1
 
 def my_view(request):
     user = request.user 
