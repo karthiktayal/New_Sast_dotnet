@@ -23,7 +23,7 @@ jobs:
         
       - name: Run AppScan SAST scan
         id: appscan
-        uses: HCL-TECH-SOFTWARE/appscan-sast-action@ASA-13165_GitHub_PR_Scan_Summary
+        uses: HCL-TECH-SOFTWARE/appscan-sast-action@configTest
         with:
           asoc_key: ${{ secrets.ASOC_KEY }}
           asoc_secret: ${{ secrets.ASOC_SECRET }}
@@ -31,7 +31,7 @@ jobs:
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
           static_analysis_only: true
           open_source_only: false
-          service_url:  https://blmycldtl446131.nonprod.hclpnp.com
+          service_url:  https://cloud.appscan.com
           acceptssl: true
           personal_scan: false
           wait_for_analysis: true
