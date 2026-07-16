@@ -26,7 +26,7 @@ def my_view(request):
 
     
     # Python - BAD PRACTICE 
-import psycopg py incremental scan A360
+import psycopg py incremental scan A360 11
 
 def connect_to_db():
     conn = psycopg2.connect(
