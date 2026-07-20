@@ -8,7 +8,7 @@
  
    d 
 def my_view(request):
-    user = request.user nb1
+    user = request.user nb12
     data = get_data()
     return render(request, 'template.html', locals())
 
