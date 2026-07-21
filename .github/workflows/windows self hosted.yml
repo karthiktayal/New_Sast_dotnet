@@ -31,7 +31,7 @@ jobs:
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
           static_analysis_only: true
           open_source_only: false
-          service_url:  https://blmycldtl446131.nonprod.hclpnp.com
+          service_url:  https://lp2-ap-52011081.appscan-test.local
           acceptssl: true
           personal_scan: false
           wait_for_analysis: true
