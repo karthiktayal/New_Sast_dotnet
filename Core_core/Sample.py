@@ -1,4 +1,4 @@
-{% autoescape on %}
+45{% autoescape on %}
   {{ user_input }}
 {% endautoescape %}
 
@@ -8,6 +8,7 @@
  
    d 
 def my_view(request):
+    user = request.user nb12345
     user = request.user nb1234
     data = get_data()
     return render(request, 'template.html', locals())
