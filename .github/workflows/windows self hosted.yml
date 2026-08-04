@@ -35,7 +35,7 @@ jobs:
           acceptssl: true
           personal_scan: false
           wait_for_analysis: true
-          incremental_scan: false
+          incremental_scan: true
           fail_for_noncompliance: false
           failure_threshold: High
     env: 
