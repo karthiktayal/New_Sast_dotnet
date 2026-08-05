@@ -27,9 +27,9 @@ jobs:
           asoc_secret: ${{ secrets.ASOC_SECRET }}
           application_id: ${{ secrets.ASOC_APP_ID }}
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
-          service_url:  https://lp2-ap-52011081.appscan-test.local
+          service_url:  https://blmycldtl446131.nonprod.hclpnp.com
           static_analysis_only: true
-          acceptssl: false
+          acceptssl: true
           personal_scan: false
           wait_for_analysis: false
           incremental_scan: false
