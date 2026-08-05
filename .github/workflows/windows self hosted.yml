@@ -31,7 +31,7 @@ jobs:
           static_analysis_only: true
           acceptssl: true
           personal_scan: false
-          wait_for_analysis: true
+          wait_for_analysis: false
           incremental_scan: false
           fail_for_noncompliance: false
           failure_threshold: High
