@@ -1,3 +1,4 @@
+
 name: "HCL AppScan SAST for AppScan 360 Instance"
 on:
   pull_request:
@@ -24,3 +25,5 @@ jobs:
           incremental_scan: true
           fail_for_noncompliance: true
           failure_threshold: High
+env: 
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
