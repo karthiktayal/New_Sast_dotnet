@@ -1,8 +1,6 @@
 name: "HCL AppScan SAST for AppScan 360 Instance"
 on:
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize]
+  workflow_dispatch: 
 jobs:
   scan:
     runs-on: self-hosted
