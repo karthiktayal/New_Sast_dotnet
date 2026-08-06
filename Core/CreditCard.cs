@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace Core
 {
-    public class CreditCard incremental scan
+    public class CreditCard incremental scan 12
     {
         #region Public properties
         /// <summary>The XML file in which credit card numbers are stored.</summary>
