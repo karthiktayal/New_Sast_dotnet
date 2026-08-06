@@ -1,6 +1,8 @@
 name: "HCL AppScan SAST for AppScan 360 Instance"
 on:
-  workflow_dispatch: 
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
 jobs:
   scan:
     runs-on: self-hosted
@@ -19,6 +21,6 @@ jobs:
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
           personal_scan: false
           wait_for_analysis: true
-          incremental_scan: false
+          incremental_scan: true
           fail_for_noncompliance: true
           failure_threshold: High
