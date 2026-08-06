@@ -21,4 +21,4 @@ jobs:
           wait_for_analysis: true
           incremental_scan: false
           fail_for_noncompliance: false
-          failure_threshold: high
+          failure_threshold: High
