@@ -17,3 +17,9 @@ jobs:
           static_analysis_only: true
           service_url: https://blmycldtl446131.nonprod.hclpnp.com
           acceptssl: true
+          scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
+          personal_scan: false
+          wait_for_analysis: true
+          incremental_scan: false
+          fail_for_noncompliance: false
+          failure_threshold: High
