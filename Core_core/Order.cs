@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core
 {
-    public class Order A360inc1.1.0 sca rescan report A360 123456789
+    public class Order A360inc1.1.0 sca rescan report A360 inc
     {
         public virtual int OrderId { get; set; }
         public virtual string CustomerId { get; set; }
