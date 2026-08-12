@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Core12
+namespace Core123
 {
     public class Customer
     {
