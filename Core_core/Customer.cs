@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core123
 {
-    public class Customer
+    public class Customer 12
     {
         public virtual string CustomerId { get; set; }
         public virtual string CompanyName { get; set; }
