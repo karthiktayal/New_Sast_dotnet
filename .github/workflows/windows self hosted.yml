@@ -17,6 +17,7 @@ jobs:
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: ${{ secrets.ASOC_APP_ID }}
           service_url: https://cloud.appscan.com
+          open_source_only: true
           acceptssl: true
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan"
           personal_scan: false
