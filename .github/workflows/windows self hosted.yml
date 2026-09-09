@@ -26,5 +26,3 @@ jobs:
           incremental_scan: false
           fail_for_noncompliance: true
           failure_threshold: High
-env: 
-      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
