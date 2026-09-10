@@ -1,9 +1,7 @@
 
 name: "HCL AppScan SAST for AppScan 360 Instance"
 on:
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize]
+  workflow_dispatch: 
 jobs:
   scan:
     runs-on: self-hosted
@@ -11,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run AppScan SAST scan
-        uses: HCL-TECH-SOFTWARE/appscan-sast-action@github-token-changes
+        uses: HCL-TECH-SOFTWARE/appscan-sast-action@3a5086302da64187c4747ca0ef68518f92064c43
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
