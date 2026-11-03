@@ -20,7 +20,7 @@ jobs:
           static_analysis_only: true
           open_source_only: false
           acceptssl: true
-          scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan Clienttype check"
+          scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan Clienttype check 1"
           personal_scan: false
           wait_for_analysis: true
           incremental_scan: true
