@@ -23,6 +23,6 @@ jobs:
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan Clienttype check 1"
           personal_scan: false
           wait_for_analysis: true
-          incremental_scan: true
+          incremental_scan: false
           fail_for_noncompliance: true
           failure_threshold: High
