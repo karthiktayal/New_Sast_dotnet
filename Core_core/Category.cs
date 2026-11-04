@@ -2,7 +2,7 @@
 
 namespace Core
 {
-    public class Category
+    public class Category a
     {
         public virtual int CategoryId { get; set; }
         public virtual string CategoryName { get; set; }
