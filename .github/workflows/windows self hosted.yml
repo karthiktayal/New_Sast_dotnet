@@ -22,7 +22,7 @@ jobs:
           acceptssl: true
           scan_name: "SAST ${{ steps.date.outputs.date }} Incremental scan Clienttype check eu"
           personal_scan: false
-          wait_for_analysis: true
+          wait_for_analysis: false
           incremental_scan: true
           fail_for_noncompliance: false
           failure_threshold: High
